@@ -1,0 +1,146 @@
+<?php
+
+$title = 'Arduino Unleash Path';
+$topTitle = 'Arduino<br/>Unleash Path';
+$topContent = '
+We are committed to accelerating developers\' growth.
+<br/><br/>
+One of the ways of acquiring new knowledge and skills<br/>
+is taking a Path to unleashing one\'s potential.
+';
+
+$introduceTitle = 'Arduino';
+$introduceContent = 'Arduino is more than an open tool for making, tinkering, and exploring physical and digital interaction, this is an entire ecosystem supporting students, developers and passionates across all disciplines with theirs electronic projects. In this Unleash Path I want to present my point of view on prototyping electronic tools, toys and equipments. This is probably not the best tutorial and does not cover all related topics, but in my opinion, it will give you solid fundamental knowledge of Arduino’s ecosystem.';
+
+
+$steps = [
+	[
+		'title' => 'Arduino Novice',
+		'inside_steps' => [
+			'results' => [
+				'title' => 'Result',
+				'elements' => [
+					'You will learn the Arduino’s and C/C++ basics, get familiar with Arduino IDE and how to distinguish the boards. After this part you should be able to run full environment with programming IDE and connect your Arduino board to your computer to start working on own projects.',
+				]
+			],
+			'resources' => [
+				'title' => 'Resources to read and learn',
+				'elements' => [
+					'Arduino boards (Uno, Mega, Due, Zero, Family), breadboard, jumper wires' => 'http://www.makeuseof.com/tag/whats-included-arduino-starter-kit-makeuseof-explains/',
+					'C++ basic programming skills' => 'https://startingelectronics.org/software/arduino/learn-to-program-course/',
+					'Arduino IDE' => 'https://learn.adafruit.com/ladyadas-learn-arduino-lesson-number-0',
+					'Arduino foundations' => 'https://www.arduino.cc/en/Tutorial/Foundations',
+				]
+			],
+			'exercise' => [
+				'title' => 'Exercise',
+				'elements' => [
+					'Install Arduino IDE, write and upload into Arduino’s board a simple application which will log a message “Hello World” in the IDE’s console.'
+				]
+			]
+		]
+	],
+	[
+		'title' => 'Arduino Apprentice (Prototyping)',
+		'inside_steps' => [
+			'results' => [
+				'title' => 'Result',
+				'elements' => [
+					'You will be able to create a simple electronic prototype with an Arduino board and manage outcome communication with simple logic using LEDs.',
+				]
+			],
+			'resources' => [
+				'title' => 'Resources to read and learn',
+				'elements' => [
+					'Using the digital output and input pins with simple button and LED ' => 'http://www.ladyada.net/learn/arduino/lesson1.html',
+					'All about LEDs' => 'https://learn.adafruit.com/all-about-leds',
+					'Analog Inputs' => 'https://learn.adafruit.com/adafruit-arduino-lesson-8-analog-inputs',
+					'Sensing Light' => 'https://learn.adafruit.com/adafruit-arduino-lesson-9-sensing-light',
+				]
+			],
+			'exercise' => [
+				'title' => 'Exercise',
+				'elements' => [
+					'Create a simple traffic light controller with three LED lights - green, orange and red.' => 'http://www.makeuseof.com/tag/arduino-traffic-light-controller/'
+				]
+			]
+		]
+	],
+	[
+		'title' => 'Arduino Adept',
+		'inside_steps' => [
+			'results' => [
+				'title' => 'Result',
+				'elements' => [
+					'This will be your first bigger exercise. The goal is to learn how to use external sensors and fluently communicate with them, how to connect with external boards and manage motors.'
+				]
+			],
+			'resources' => [
+				'title' => 'Resources to read and learn',
+				'elements' => [
+					'Arduino external sensors' => 'https://www.arduino.cc/en/Tutorial/BuiltInExamples',
+					'Crash sensors ' => 'https://www.dfrobot.com/wiki/index.php/Crash_Sensor_(SKU:_SEN0138)',
+					'Ultrasonic range detector ' => 'http://www.instructables.com/id/Ultrasonic-Range-detector-using-Arduino-and-the-SR/',
+					'How to use motors ' => 'https://learn.adafruit.com/adafruit-arduino-lesson-14-servo-motors',
+				]
+			],
+			'exercise' => [
+				'title' => 'Exercise',
+				'elements' => [
+					'Build a self-driving robot with crash sensors at the back and 1 long range ultrasonic sensor. Robot should avoid all obstacles on the route and change path automatically if necessary. ' => 'https://www.hackster.io/29284/ble-bot-9000-c150b8?ref=channel&ref_id=424_trending___&offset=41',
+				]
+			]
+		]
+	],
+	[
+		'title' => 'Arduino Expert',
+		'inside_steps' => [
+			'results' => [
+				'title' => 'Result',
+				'elements' => [
+					'After this part you would be able to connect your electronic prototype to the Internet by one of three different channels, parse and present delivered data. '
+				]
+			],
+			'resources' => [
+				'title' => 'Resources to read and learn',
+				'elements' => [
+					'Communication through wi-fi' => 'https://www.arduino.cc/en/Guide/ArduinoWiFiShield',
+					'GSM Communicatio' => 'https://www.arduino.cc/en/Guide/ArduinoGSMShieldV2',
+					'Ethernet communication ' => 'http://tronixstuff.com/2013/12/06/arduino-tutorials-chapter-16-ethernet/',
+					'Data Graph Processing' => 'https://www.arduino.cc/en/Tutorial/Graph',
+				]
+			],
+			'exercise' => [
+				'title' => 'Exercise',
+				'elements' => [
+					'Upgrade your self-driving robot to send current position to the server and draw the route on your device. ' => 'https://www.hackster.io/team-oblu/robot-for-supercool-indoor-navigation-95047f?ref=channel&ref_id=424_trending___&offset=80',
+				]
+			]
+		]
+	],
+	[
+		'title' => 'Arduino Master',
+		'inside_steps' => [
+			'results' => [
+				'title' => 'Result',
+				'elements' => [
+					'Arduino is a perfect and flexible solution for prototyping. But most of prototypes expected to be evolve into a product. After the final part you should know how to create a permanent PCB board and release a ready product.'
+				]
+			],
+			'resources' => [
+				'title' => 'Resources to read and learn',
+				'elements' => [
+					'Arduino on Proto Board ' => 'https://www.youtube.com/watch?v=vMu1UjBxOiQ&index=28&list=LLdRSsgwDIEmUxerxAXwhBgA',
+					'Download ExpressPCB' => 'https://www.expresspcb.com/',
+					'Create PCB ' => 'https://aaroneiche.com/2010/06/24/a-beginners-guide-to-making-an-arduino-shield-pcb/',
+				]
+			],
+			'exercise' => [
+				'title' => 'Exercise',
+				'elements' => [
+					'Create a blueprint of a minimal size PCB board of your self-driving robot in the ExpressPCB application.',
+				]
+			]
+		]
+	]
+];

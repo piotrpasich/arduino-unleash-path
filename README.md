@@ -2,7 +2,7 @@ This is a sample template for public unleash paths with Arduino's example inside
 
 ## Installation
 
-1. Install from composer:
+Install from composer:
 
 ```
 composer clone piotrpasich/public-unleash-path-template

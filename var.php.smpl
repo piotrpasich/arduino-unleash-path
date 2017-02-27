@@ -12,6 +12,18 @@ is taking a Path to unleashing one\'s potential.
 $introduceTitle = 'Arduino';
 $introduceContent = 'Arduino is more than an open tool for making, tinkering, and exploring physical and digital interaction, this is an entire ecosystem supporting students, developers and passionates across all disciplines with theirs electronic projects. In this Unleash Path I want to present my point of view on prototyping electronic tools, toys and equipments. This is probably not the best tutorial and does not cover all related topics, but in my opinion, it will give you solid fundamental knowledge of Arduino’s ecosystem.';
 
+$googleAnaliticsCode = "
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-xxxxxxx-xx', 'auto');
+  ga('send', 'pageview');
+
+</script>
+";
 
 $steps = [
 	[

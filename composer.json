@@ -1,0 +1,14 @@
+{
+    "name": "piotrpasich/public-unleash-path-template",
+    "description": "This is a sample template for public unleash paths with Arduino's example inside.",
+    "type": "php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Piotr Pasich",
+            "email": "piotr.pasich@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

@@ -5,7 +5,13 @@ This is a sample template for public unleash paths with Arduino's example inside
 Install from composer:
 
 ```
-composer clone piotrpasich/public-unleash-path-template
+composer require piotrpasich/public-unleash-path-template
+```
+
+or install from git:
+
+```
+git clone git@github.com:piotrpasich/public-unleash-path-template.git
 ```
 
 Copy configuration file and adjust to your needs:

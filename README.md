@@ -4,15 +4,15 @@ This is a sample template for public unleash paths with Arduino's example inside
 
 1. Install from composer:
 
-    ```
-    composer clone piotrpasich/public-unleash-path-template
-    ```
+```
+composer clone piotrpasich/public-unleash-path-template
+```
 
 Copy configuration file and adjust to your needs:
 
-    ```
-    cp var.php.smlp var.php
-    ```
+```
+cp var.php.smlp var.php
+```
 
 Done
 

@@ -66,7 +66,7 @@
 
     <section class="bg-primary" id="about" style="padding:70px;">
         <div class="container">
-            <div class="row">
+            <div class="">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h2 class="section-heading"><?php echo $introduceTitle; ?></h2>
                     <p class="text-faded"><?php echo $introduceContent; ?></p>
@@ -78,7 +78,7 @@
     <section id="steps">
             <?php foreach ( $steps as $stepNo => $step ) { ?>
                 <div class="container">
-                    <div class="row no-gutter ">
+                    <div class=" no-gutter ">
                         <div class="col-lg-8 col-lg-offset-2 col-sm-12">
                             <h2 class="step-title" id="step-<?php echo $stepNo+1; ?>">
                                 <img src="img/<?php echo $stepNo+1; ?>.jpg" class="step-image" alt="">
@@ -124,7 +124,7 @@
 
     <section id="contact" style="padding: 40px">
         <div class="container">
-            <div class="row">
+            <div class="">
                 <div class="col-lg-5 col-sm-12">
                     2016 © All rights reserved. X-Company Pty Ltd.
                 </div>

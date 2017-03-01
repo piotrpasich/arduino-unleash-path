@@ -112,6 +112,14 @@
         <div class="container text-center">
             <div class="call-to-action">
                 <h2>Watch other Paths</h2>
+                <a href="//piotrpasich.com/arduino-unleash-path/" class="btn btn-default btn-xl "  target="_blank">
+                    <img src="img/arduino.png" />
+                    ARDUINO
+                </a>
+                <a href="http://publicphppath.galileoprime.com/" class="btn btn-default btn-xl "  target="_blank">
+                    <img src="img/php.png" />
+                    PHP
+                </a>
                 <a href="http://paths.x-team.com/docker" class="btn btn-default btn-xl "  target="_blank">
                     <img src="img/docker.gif" />
                     DOCKER

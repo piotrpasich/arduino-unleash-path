@@ -1,3 +1,4 @@
+<?php require 'lib/common.php'; ?>
 <?php require 'var.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,6 +39,13 @@
     <![endif]-->
 
     <?php echo $googleAnaliticsCode; ?>
+    <style>
+        header {
+            background-image: url('<?php echo matchImageFile('background.gif', 'xteam.gif'); ?>');
+
+
+        }
+    </style>
 </head>
 
 <body id="page-top">
@@ -83,7 +91,7 @@
                     <div class=" no-gutter ">
                         <div class="col-lg-8 col-lg-offset-2 col-sm-12">
                             <h2 class="step-title" id="step-<?php echo $stepNo+1; ?>">
-                                <img src="img/<?php echo $stepNo+1; ?>.jpg" class="step-image" alt="">
+                                <img src="<?php echo matchImageFile($stepNo+1 . '.png', $stepNo+1 . '.jpg'); ?>" class="step-image" alt="">
                                 <a href="#step-<?php echo $stepNo+1; ?>"><?php echo $step[ 'title' ]; ?></a>
                             </h2>
                             <hr class="full"/>
@@ -127,6 +135,11 @@
                 <a href="https://github.com/szymonmichalak/react-forms-path" class="btn btn-default btn-xl" target="_blank">
                     <img src="//storage.googleapis.com/instapage-user-media/c450f410/9641413-0-react-logo-black.png" />
                     REACT.JS
+                </a>
+
+                <a href="//piotrpasich.com/rabbit-unleash-path/" class="btn btn-default btn-xl" target="_blank">
+                    <img src="img/rabbit.png" style="width: 25px" />
+                    RABBIT MQ
                 </a>
             </div>
         </div>

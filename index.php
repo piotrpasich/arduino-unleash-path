@@ -42,8 +42,6 @@
     <style>
         header {
             background-image: url('<?php echo matchImageFile('background.gif', 'xteam.gif'); ?>');
-
-
         }
     </style>
 </head>
@@ -67,6 +65,10 @@
         <div class="header-content">
             <div class="header-content-inner">
                 <h1 id="homeHeading"><?php echo $topTitle; ?></h1>
+                <?php if (isset($author)) { ?>
+                    <p>by <?php echo $author; ?></p>
+
+                <?php } ?>
                 <hr>
                 <p><?php echo $topContent; ?></p>
                 <?php /** <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a> **/ ?>
@@ -140,6 +142,10 @@
                 <a href="//piotrpasich.com/rabbit-unleash-path/" class="btn btn-default btn-xl" target="_blank">
                     <img src="img/rabbit.png" style="width: 25px" />
                     RABBIT MQ
+                </a>
+                <a href="//piotrpasich.com/redux-unleash-path/" class="btn btn-default btn-xl" target="_blank">
+                    <img src="img/redux.png" />
+                    REDUX
                 </a>
             </div>
         </div>

@@ -449,7 +449,7 @@ body {
   font-size: 14px;
 }
 .btn-default img {
-  width:30px;
+  height:25px;
   margin-right: 10px;
 }
 hr.full {
@@ -545,4 +545,16 @@ h2.step-title {
 }
 #steps div.container {
   padding: 60px 0 20px;
+}
+
+.call-to-action .btn-default {
+  margin-bottom: 20px;
+}
+
+#steps ul li .bulletPoints li:before {
+  background: none;
+  content: "-";
+  font-size: 24px;
+}
+#steps ul li .bulletPoints li {
 }

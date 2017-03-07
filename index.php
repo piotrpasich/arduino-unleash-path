@@ -76,6 +76,7 @@
         </div>
     </header>
 
+    <?php if (!empty($introduceContent)) { ?>
     <section class="bg-primary" id="about" style="padding:70px;">
         <div class="container">
             <div class="">
@@ -86,6 +87,7 @@
             </div>
         </div>
     </section>
+    <?php } ?>
 
     <section id="steps">
             <?php foreach ( $steps as $stepNo => $step ) { ?>
@@ -98,12 +100,25 @@
                             </h2>
                             <hr class="full"/>
                             <?php foreach ( $step[ 'inside_steps' ] as $key => $inside_step ) { ?>
-                                <h3><?php echo $inside_step[ 'title' ]; ?></h3>
+                                <?php if (isset($inside_step[ 'title' ])) { ?>
+                                    <h3><?php echo $inside_step[ 'title' ]; ?></h3>
+                                <?php } ?>
                                 <ul class="<?php echo $key; ?>">
                                     <?php foreach ( $inside_step[ 'elements' ] as $elementKey => $elementValue ) { ?>
                                         <li>
                                             <?php if ( is_numeric( $elementKey ) ) { ?>
-                                                <?php echo $elementValue; ?>
+                                                <?php if (is_array($elementValue)) { ?>
+                                                    <?php echo $elementValue['content']; ?>
+
+		                                            <ul class="bulletPoints">
+	                                                    <?php foreach ($elementValue['points'] as $bulletPointKey => $bulletPoint) { ?>
+	                                                        <li><?php echo $bulletPoint; ?></li>
+	                                                    <?php } ?>
+		                                            </ul>
+
+                                                <?php } else { ?>
+                                                    <?php echo $elementValue; ?>
+                                                <?php } ?>
                                             <?php } else { ?>
                                                 <a href="<?php echo $elementValue; ?>"
                                                    target="_blank"><?php echo $elementKey; ?></a>
@@ -134,18 +149,24 @@
                     <img src="img/docker.png" />
                     DOCKER
                 </a>
+
+	            <br/>
                 <a href="https://github.com/szymonmichalak/react-forms-path" class="btn btn-default btn-xl" target="_blank">
                     <img src="//storage.googleapis.com/instapage-user-media/c450f410/9641413-0-react-logo-black.png" />
                     REACT.JS
                 </a>
 
                 <a href="//piotrpasich.com/rabbit-unleash-path/" class="btn btn-default btn-xl" target="_blank">
-                    <img src="img/rabbit.png" style="width: 25px" />
+                    <img src="img/rabbit.png" style="height: 25px" />
                     RABBIT MQ
                 </a>
                 <a href="//piotrpasich.com/redux-unleash-path/" class="btn btn-default btn-xl" target="_blank">
                     <img src="img/redux.png" />
                     REDUX
+                </a>
+                <a href="//dobranowski.pl/x-team/becoming-an-unleasher" class="btn btn-default btn-xl" target="_blank">
+                    <img src="img/unleash.png" />
+                    UNLEASH
                 </a>
             </div>
         </div>

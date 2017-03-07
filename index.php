@@ -129,7 +129,7 @@
                     PHP
                 </a>
                 <a href="http://paths.x-team.com/docker" class="btn btn-default btn-xl "  target="_blank">
-                    <img src="img/docker.gif" />
+                    <img src="img/docker.png" />
                     DOCKER
                 </a>
                 <a href="https://github.com/szymonmichalak/react-forms-path" class="btn btn-default btn-xl" target="_blank">
